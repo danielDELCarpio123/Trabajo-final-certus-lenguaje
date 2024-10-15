@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ponte en contacto con Tienda de Bicicletas.">
+    <title>Tienda de Bicicletas - Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tienda de Bicicletas</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <img src="baner bicileta.PNG" alt="Banner de contacto" class="banner">
+    </header>
+
+    <section>
+        <h2>Contacto</h2>
+        <div class="contacto-container">
+            <div class="contact-info">
+                <p><strong>Teléfono:</strong> 99955567</p>
+                <p><strong>Email:</strong> certus.edudu@hotmail.com</p>
+                <p><strong>Dirección:</strong> Calle Puente 322</p>
+            </div>
+            <div class="contact-image">
+                <img src="mapa de arequipa.PNG" alt="Mapa de ubicación" class="mapa">
+            </div>
+        </div>
+
+        <h3>Envíanos un mensaje</h3>
+        <form id="contactForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <h3>Sube imágenes de tus bicicletas</h3>
+        <input type="file" id="imageInput" multiple>
+        <div id="imagePreview"></div>
+    </section>
+
+    <footer>
+        <p>© 2024 Tienda de Bicicletas. Todos los derechos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
