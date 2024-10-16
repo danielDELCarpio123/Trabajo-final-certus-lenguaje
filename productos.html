@@ -17,7 +17,7 @@
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
-        <img src="baner bicileta.PNG" alt="Banner de productos" class="banner">
+        <img src="baner_bicicleta.PNG" alt="Banner de productos" class="banner">
     </header>
 
     <section>
@@ -28,26 +28,33 @@
                 <h3>Bicicleta de montaña</h3>
                 <p>Precio: $500</p>
                 <p>Ideal para senderos y terrenos difíciles.</p>
+                <button onclick="addToFavorites('Bicicleta de montaña')">Añadir a favoritos</button>
             </div>
             <div class="producto">
                 <img src="bicileta de carretera.jpeg" alt="Bicicleta de carretera" class="producto-img">
                 <h3>Bicicleta de carretera</h3>
                 <p>Precio: $700</p>
                 <p>Ligera y rápida, perfecta para largas distancias.</p>
+                <button onclick="addToFavorites('Bicicleta de carretera')">Añadir a favoritos</button>
             </div>
             <div class="producto">
                 <img src="bicileta electrica.jpg" alt="Bicicleta eléctrica" class="producto-img">
                 <h3>Bicicleta eléctrica</h3>
                 <p>Precio: $1200</p>
                 <p>Disfruta de paseos más largos con asistencia eléctrica.</p>
+                <button onclick="addToFavorites('Bicicleta eléctrica')">Añadir a favoritos</button>
             </div>
             <div class="producto">
                 <img src="bici plegable.jpg" alt="Bicicleta plegable" class="producto-img">
                 <h3>Bicicleta plegable</h3>
                 <p>Precio: $400</p>
                 <p>Compacta y fácil de transportar, ideal para la ciudad.</p>
+                <button onclick="addToFavorites('Bicicleta plegable')">Añadir a favoritos</button>
             </div>
         </div>
+
+        <h3>Mis productos favoritos</h3>
+        <ul id="favoritesList"></ul>
     </section>
 
     <footer>
