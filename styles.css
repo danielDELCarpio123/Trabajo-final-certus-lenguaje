@@ -1,169 +1,146 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset de estilos básicos */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-}
-
-header {
-    text-align: center;
-    background: #333;
-    color: #fff;
-    padding: 20px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.banner {
-    width: 100%;
-    height: auto;
-}
-
-h1, h2, h3 {
     color: #333;
 }
 
-h2 {
-    margin-top: 20px;
-}
-
-.productos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+header {
+    background-color: #4CAF50;
+    color: white;
     padding: 20px;
-}
-
-.producto {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 20px;
-    margin: 10px;
-    width: 300px;
     text-align: center;
-    background: #fff;
-    transition: transform 0.2s;
+}
+
+.banner {
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+/* Productos */
+.producto {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .producto:hover {
-    transform: scale(1.05);
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .producto-img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
-.contacto-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 20px;
+#favoritesList {
+    list-style-type: none;
+    padding: 0;
 }
 
-.contact-info {
-    width: 45%;
-}
-
-.contact-image {
-    width: 45%;
-}
-
-.mapa {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
+#favoritesList li {
+    padding: 5px 0;
 }
 
 form {
     margin-top: 20px;
-    background: #fff;
-    padding: 15px;
-    border-radius: 5px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    border: 1px solid #ddd;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-label {
+form label {
     display: block;
-    margin: 10px 0 5px;
+    margin-bottom: 5px;
 }
 
-input, textarea {
+form input, form textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 5px;
 }
 
-button {
-    padding: 10px 15px;
+form button {
     background-color: #4CAF50;
     color: white;
+    padding: 10px 20px;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
 }
 
-button:hover {
+form button:hover {
     background-color: #45a049;
 }
 
-#imagePreview {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 10px;
-}
-
 #imagePreview img {
-    max-width: 100px;
+    width: 100px;
     margin: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-/* Estilos adicionales para nuevas secciones */
-.ofertas {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-}
-
-.oferta-item {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    background: #fff;
-    text-align: center;
-}
-
-.oferta-img {
-    max-width: 100%;
-    height: auto;
-    margin: 10px 0;
-}
-
-.testimonios {
-    padding: 20px;
-    background: #f9f9f9;
-    border-radius: 5px;
-}
-
-blockquote {
-    font-style: italic;
-    margin: 10px 0;
-    border-left: 5px solid #4CAF50;
-    padding-left: 10px;
-}
-
-form {
-    margin-top: 20px;
-    background: #fff;
-    padding: 15px;
-    border-radius: 5px;
-}
-
-input[type="email"] {
-    margin-bottom: 10px;
+    border-radius: 10px;
 }
